@@ -1,0 +1,110 @@
+@media (max-width:540px)
+{
+    .d-table
+    {
+        display: none;
+    }
+    .m-table
+    {
+        display: inline-table;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1218px)
+{
+   .profile-content, .icon-list
+   {
+    padding-left:60px !important;
+   }   
+} 
+@media (max-width:992px)
+{
+    .profile img
+   {
+    margin-bottom: 0px !important;
+   }   
+
+   .skill .row
+   {
+    display: block;
+   }
+   .about .row
+   {
+      display: block;
+   }
+
+}
+
+@media (min-width:768px) and (max-width:992px)
+{
+   
+   .icon-tab
+   {
+     display: none;
+   }
+   .icon-list-column
+   {
+    width: 100% !important;
+   }
+
+   
+} 
+
+@media (max-width:768px)
+{
+    .d-navbar
+    {
+        left: auto;
+        right: 15px ;
+        top: 90px;
+    }
+
+#mnav
+   {
+    display: none;
+       
+   }
+
+.mobile-nav
+   {
+    display: block;
+   }
+   
+   .floating
+   {
+    bottom: 15px;
+    right: 15px;
+   }
+   
+}
+
+
+
+@media (max-width:680px)
+{
+    .icon-list
+    {  
+       display: block;
+       text-align: center;
+       
+    }
+    .exp-box .row
+    {
+        display: block;
+    }
+
+    .timeline-box
+    {
+        margin-right: 15px;
+    }
+    
+}
+
+@media(max-width:400px)
+{
+    .profile img
+    {
+        max-width: 100%;
+    }
+}
