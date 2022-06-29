@@ -110,6 +110,10 @@
 
     .profile-content h1
     {
-        font-size: 40px;
+        font-size: 50px;
     }
+
+
+    .timeline-box div, .work-detail
+    {padding: 20px;}
 }
