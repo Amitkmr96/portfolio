@@ -12,6 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
 
 <body>
@@ -492,7 +493,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="contact form">
-                        <form id="form">
+                        <form id="form" action="" method="post">
                         <div class="form-group">
                             <input type="text" name="name" class="form-control " id="name" placeholder="Name*" required>
                         </div>
@@ -548,7 +549,25 @@
 
     <script src="js.js"></script>
 
-
+<script>  
+function sendEmail() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+    let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  Message : ${message} <br>`;
+    Email.send({
+        Host : "smtp.mailtrap.io",
+        Username : "amitkmr9911@gmail.com",
+        Password : "AE9C75165CBAC83CC5501FF2890BC077779B",
+        To : 'them@website.com',
+        From : "you@isp.com",
+        Subject : "Mail from Portfolio website",
+        Body : finalmessage
+    }).then(
+      message => alert(message)
+    );
+}
+</script>
 
 </body>
 </html>
