@@ -35,6 +35,4 @@ $(".line").each(function () {
     });
   });
 
-
-  
-
+ 
