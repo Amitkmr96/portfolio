@@ -353,6 +353,7 @@ div {
 .timeline-box p {
   color: var(--black);
   font-weight: 600;
+  line-height: 1.5em;
 }
 
 /*css for education section*/
