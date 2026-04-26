@@ -40,7 +40,6 @@ p {
   line-height: 26px;
   overflow-wrap: break-word;
   color: var(--text);
-  text-align: justify;
 }
 
 a {
@@ -347,7 +346,7 @@ div {
 
 .timeline-box div,
 .work-detail {
-  padding: 40px;
+  padding: 25px;
 }
 
 .timeline-box p {
